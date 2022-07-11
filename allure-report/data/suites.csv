@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jul 11 17:20:17 IST 2022","Mon Jul 11 17:20:41 IST 2022","24100","","AutomationPractice.spec.js","Automation Practice tests","","","Verify on different tabs and verify title",""
+"passed","Mon Jul 11 17:21:07 IST 2022","Mon Jul 11 17:21:26 IST 2022","18528","","AutomationPractice.spec.js","Automation Practice tests","","","Verify Footer of the page",""
+"passed","Mon Jul 11 17:20:41 IST 2022","Mon Jul 11 17:21:07 IST 2022","26160","","AutomationPractice.spec.js","Automation Practice tests","","","Verify Login",""
+"passed","Mon Jul 11 17:19:58 IST 2022","Mon Jul 11 17:20:17 IST 2022","19506","","AutomationPractice.spec.js","Automation Practice tests","","","Verify placeholderText",""
+"passed","Mon Jul 11 17:21:26 IST 2022","Mon Jul 11 17:21:44 IST 2022","17726","","AutomationPractice.spec.js","Automation Practice tests","","","Verify Product details",""
+"passed","Mon Jul 11 17:19:37 IST 2022","Mon Jul 11 17:19:58 IST 2022","20689","","AutomationPractice.spec.js","Automation Practice tests","","","Verify Links in header",""
+"passed","Mon Jul 11 17:19:16 IST 2022","Mon Jul 11 17:19:37 IST 2022","20776","","AutomationPractice.spec.js","Automation Practice tests","","","Verify title & URL of the launch URL",""
