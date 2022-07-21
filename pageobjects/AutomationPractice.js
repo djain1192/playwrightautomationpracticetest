@@ -39,6 +39,7 @@ constructor(page)
         this.dataSheet = page.locator('table[class=table-data-sheet]');
         this.compisitions = page.locator ('#center_column > div > section:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(2)');
         this.styles = page.locator('#center_column > div > section:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2)');
+        this.properties=page.locator('#center_column > div > section:nth-child(2) > table > tbody > tr:nth-child(3) > td:nth-child(2)');
         this.gettwitterlink = page.locator('.btn-twitter');
         this.getfacebooklink = page.locator('.btn-facebook');
         this.getgooglepluslink = page.locator('.btn-google-plus');
@@ -198,15 +199,21 @@ async verifyMyAccount()
 
  async verifyDataSheet() {
     await expect(this.dataSheet).toContainText('Cotton');
+    await expect(this.dataSheet).toContainText('Girly');   
+    await expect(this.dataSheet).toContainText('Colorful Dress'); 
 }
 
 async verifyCompisitions() {
-    //await this.compisitions();
+   
     await expect(this.compisitions).toContainText('Cotton');
 }
 
 async verifyStyles() {
-    await expect(this.styles).toContainText('Girly');    
+    await expect(this.styles).toContainText('Girly');
+  }
+
+async verifyProperties(){
+   await expect(this.properties).toContainText('Colorful Dress'); 
 }
 
 async getTwitterLink()

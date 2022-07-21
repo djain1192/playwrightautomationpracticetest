@@ -87,23 +87,19 @@ for (const data of dataset) {
         await automationpractice.goto();
         await automationpractice.getProduct();
 
-        // cy.get('img', { includeShadowDom: true })
-        //     .filter('[src]')
-        //     .filter(':visible')
-        //     .should(($imgs) => $imgs.map((i, /** @type {HTMLImageElement} */ img) => expect(img.naturalWidth).to.be.greaterThan(0)));
+        await page.waitForLoadState('networkidle');
 
+    
         await automationpractice.verifyTshirtTitle();
         await automationpractice.verifyProductDescription()
 
         //Value present anywhere in table
         await automationpractice.verifyDataSheet();
-        //await automationpractice.verifyDataSheet().toContainText('td', 'Girly').toBeVisible()
-        //await automationpractice.verifyDataSheet().toContainText('td', 'Colorful Dress').toBeVisible()
 
         //Value Present in specific raw & coulmn
         await automationpractice.verifyCompisitions();
         await automationpractice.verifyStyles();
-        //await automationpractice.getProperties().toContainText('Colorful Dress').toBeVisible()
+        await automationpractice.verifyProperties();
 
         // //Verify Composition is Cotton
         // await page.locator('table[class=table-data-sheet]>tbody>tr td:nth-child(2)').each(($e, index, $elist) => {
@@ -116,6 +112,8 @@ for (const data of dataset) {
         //     }
 
         // })
+
+//         }
 
         // //Verify Styles is Girly
         // await page.locator('table[class=table-data-sheet]>tbody>tr td:nth-child(2)').each(($e, index, $elist) => {
